@@ -185,6 +185,26 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                                             color: Colors.white.withOpacity(0.7),
                                             height: 1.5)),
                                   ],
+                                  // Specs
+                                  if (_product!['specs'] != null && _product!['specs'] is Map && (_product!['specs'] as Map).isNotEmpty) ...[
+                                    const SizedBox(height: 20),
+                                    const Text('Thông số kỹ thuật',
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 16)),
+                                    const SizedBox(height: 8),
+                                    ...(_product!['specs'] as Map<String, dynamic>).entries.map((e) => Padding(
+                                          padding: const EdgeInsets.symmetric(vertical: 2),
+                                          child: Row(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text('${e.key}: ', style: const TextStyle(color: Colors.white70, fontWeight: FontWeight.w600)),
+                                              Expanded(child: Text('${e.value}', style: const TextStyle(color: Colors.white70))),
+                                            ],
+                                          ),
+                                        ))
+                                  ],
                                 ],
                               ),
                             ),
