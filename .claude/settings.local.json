@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git config:*)",
+      "Bash(flutter --version)",
+      "Bash(flutter doctor:*)",
+      "Bash(flutter create:*)",
+      "Bash(flutter pub:*)",
+      "Bash(flutter run:*)",
+      "Bash(taskkill /F /IM dart.exe)",
+      "Bash(taskkill /F /IM flutter_tools.snapshot)",
+      "Bash(flutter analyze:*)",
+      "Bash(curl -s http://localhost:5000/)",
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash(curl -s http://localhost:8080/)",
+      "Bash(curl -s http://localhost:5001/)",
+      "Bash(curl -s http://localhost:5000/api/test)",
+      "Bash(export PATH=\"$PATH:/c/flutter/bin\")",
+      "Read(//f/Learning/SEM7-FPTu/SWD/PCComponentStore/Backend/**)",
+      "Bash(npm run:*)",
+      "Bash(flutter build:*)",
+      "Read(//c/Users/ttphatt_2403/AppData/Local/**)",
+      "Read(//c/Program Files/**)",
+      "Read(//c//**)"
+    ]
+  }
+}
